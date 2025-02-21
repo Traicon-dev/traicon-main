@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "sdel";
+    src: url("../fonts/SanDiego-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "sdl";
+    src: url("../fonts/SanDiego-Light.ttf");
+}
+@font-face {
+    font-family: "sdeb";
+    src: url("../fonts/SanDiego-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "sdm";
+    src: url("../fonts/SanDiego-Medium.ttf");
+}
+@font-face {
+    font-family: "sdb";
+    src: url("../fonts/SanDiego-Bold.ttf");
+}
+
+
+.index-module_type__E-SaG::after {
+    content: 'I';
+    animation: index-module_cursor__PQg0P 1.1s infinite step-start;
+    font-weight: 300;
+    color: rgb(119, 119, 119);
+ 
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 40vw;
+      height: auto;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .swiper-pagination-bullet {
+      background-color: #2f9cda;
+  }
+
+@media screen and (max-width:768px) {
+    body,html{
+        overflow-x: hidden;
+    }
+}
+
