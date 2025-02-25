@@ -803,7 +803,7 @@ const eventsData = [
   },
   {
     id: 4,
-    date: "4 APRIL",
+    date: "2 APRIL",
     name: "Rail Modernization summit 2025",
     place: "India",
     websiteLink: "https://rail.traiconevents.com/",
@@ -1166,7 +1166,7 @@ console.log(currentGenre)
 APRIL
     </div>
     <div className="date">
-     <p>4<sup>th</sup></p> 
+     <p>2<sup>nd</sup></p> 
     </div>
     <div className="year">
       2025
@@ -1177,8 +1177,8 @@ APRIL
   <div className="event-name">RAIL MODERNIZATION SUMMIT</div>
   <div className="event-place">NEW DELHI, INDIA</div>
   <div className="event-buttons">
-    <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/philippines/" className="visit">Visit website</a>
-    <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/philippines/delegateregistration" className="get">get tickets</a>
+    <a target="_blank" rel="noopener noreferrer" href="https://rail.traiconevents.com" className="visit">Visit website</a>
+    <a target="_blank" rel="noopener noreferrer" href="https://rail.traiconevents.com" className="get">get tickets</a>
   </div>
        </div>
        <div className="event-logo-part">

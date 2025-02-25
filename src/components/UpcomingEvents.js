@@ -782,7 +782,7 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
                 <img src={rmsIndBg} alt="Ogts" />
               </div>
               <div className="event-slide-name">Rail Modernization summit 2025</div>
-              <div className="eventdate-place">4<sup>th</sup> APRIL 2025, NEW DELHI, INDIA</div>
+              <div className="eventdate-place">2<sup>nd</sup> APRIL 2025, NEW DELHI, INDIA</div>
             </div>
             <div className={`keen-slider__slide eventslide ${activeIndex === 3 ? 'active' : ''}`}
               onClick={() => handleSlideClick(3)}
