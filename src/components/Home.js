@@ -35,7 +35,6 @@ justify-content: center;
 
 
 `;
-
 const CoverCont = styled.div`
 background-image: url(${videobg});
 width:100%;
@@ -47,7 +46,6 @@ justify-content:center;
 flex-direction:column;
 align-items: center;
 `;
-
 const CoverContent = styled.div`
 width: 80%;
 height: auto;
@@ -116,7 +114,6 @@ line-height: 11vw;
   font-size: 6vw;
 }
 `;
-
 const CoverBtn = styled.div`
   color: white;
   font-size: 1.2vw;
@@ -157,7 +154,11 @@ const CoverBtn = styled.div`
   }
 
   @media screen and (max-width:768px) {
-
+    color: white;
+    font-size: 3.5vw;
+    padding: 2vw 5vw;
+    margin-top: 4vw;
+    border-radius: 8vw;
   }
   @media screen and (min-width:768px) and (max-width:1023px){
          color: white;
@@ -167,8 +168,6 @@ const CoverBtn = styled.div`
     border-radius: 8vw;
   }
 `;
-
-
 const About = styled.div`
 width: 100%;
 height: 100vh;
@@ -402,9 +401,6 @@ font-family: "sdel";
 }
 
 `;
-
-
-
 const AboutHead = styled.h2`
 color:white;
 font-weight: 300;
@@ -523,8 +519,6 @@ a{
 }
 }
 `;
-
-
 const CovNums = styled.div`
 width:100%;
 position:absolute;
@@ -811,7 +805,6 @@ width: 70vw;
 height: 65vw;
 }
 `;
-
 
 const HomeEvents = styled.div`
 width: 100%;

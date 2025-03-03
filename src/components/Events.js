@@ -25,12 +25,7 @@ import rmsIndBg from "../images/events/indian/rms_bg.jpg"
 import rmsIndLogo from "../images/events/indian/RMS logo 2025.png"
 import crsIndBg from "../images/events/indian/cyber_ind_bg.jpg"
 import crsIndLogo from "../images/events/indian/cyber_ind_logo.svg"
-// import amsIndBg from "../images/events/indian/ams_bg.jpg"
-// import amsIndLogo from "../images/events/indian/ams_logo.png"
-// import dcisindBg from "../images/events/dcis/dcis__ind_bg.jpg"
-// import dcisindLogo from "../images/events/dcis/dcis_ind_logo.png"
-// import idcIndBg from "../images/events/indian/idc_bg.jpg"
-// import idcIndLogo from "../images/events/indian/idc_logo.png"
+
 
 const EventContainer = styled.div`
 display: flex;
@@ -106,7 +101,7 @@ opacity: 0;
   z-index: 3;
   font-family: "sdel";
   font-size: 3vw;
-margin-top: 0.5vw;
+  margin-top: 0.5vw;
   color:rgb(255, 255, 255);
 }
 .event-details{
@@ -125,6 +120,14 @@ margin-top: 0.5vw;
   text-transform: uppercase;
   width: 80%;
   margin-left: 2vw;
+}
+.conclude{
+  font-family: "concluded";
+  margin-left: 2vw;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  color: red;
+  width: fit-content;
 }
 .event-place{
   font-size: 1.1vw;
@@ -183,6 +186,7 @@ margin-top: 0.5vw;
 .event-logo-box .sq{
 width: 40%;
 }
+
 .cuts{
   position: absolute;
   left: -0.4vw;
@@ -273,7 +277,10 @@ position: absolute;
     height: 1.8vw;
 }
 .event-name {
-  font-size: 4.4vw;
+  font-size: 3.5vw;
+}
+.conclude{
+  font-size: 3.5vw;
 }
 .event-place {
   font-size: 3.1vw;
@@ -347,6 +354,9 @@ position: absolute;
 .event-name {
   font-size: 3.5vw;
 }
+.conclude{
+  font-size: 3.2vw;
+}
 .event-place {
   font-size: 2.6vw;
 }
@@ -375,7 +385,6 @@ position: absolute;
 }
 }
 `
-
 const EventHbox = styled.div`
 width: 100%;
 height: auto;
@@ -453,7 +462,6 @@ margin-top: 5vw;
   text-align: center;
 }
 `;
-
 const EventP = styled.p`
 
 width: 55%;
@@ -471,7 +479,6 @@ font-size: 1.1vw;
   font-size: 2.5vw;
 }
 `;
-
 const EventsBoxes = styled.div`
 width: 80%;
 height: auto;
@@ -530,6 +537,7 @@ margin-top: 2vw;
   font-family: "sdm";
   position: absolute;
 }
+
 .year{
   display: flex;
   align-items: center;
@@ -641,6 +649,14 @@ border-radius: 50%;
 right: -2.5vw;
 position: absolute;
 }
+.conclude{
+  font-family: "concluded";
+  margin-left: 2vw;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  color: red;
+  width: fit-content;
+}
 
 @media screen and (max-width: 767px){
   width: 100%;
@@ -703,6 +719,10 @@ position: absolute;
 }
 .get{
   font-size: 3vw;
+}
+.conclude{
+  font-size: 3.5vw;
+
 }
 }
 @media screen and (min-width: 768px) and (max-width:1024px){
@@ -767,6 +787,9 @@ position: absolute;
 .get{
   font-size: 2.5vw;
 }
+.conclude{
+  font-size: 3.5vw;
+}
 }
 `
 
@@ -776,6 +799,7 @@ const eventsData = [
     date: "25 - 26 FEBRUARY",
     name: "FINTECH REVOLUTION SUMMIT",
     place: "HOTEL CROWNE PLAZA MANAMA, BAHRAIN",
+    conc:"concluded",
     websiteLink: "https://fintech.traiconevents.com/bh/",
     ticketsLink: "#",
     backgroundImage: frsbh, 
@@ -785,6 +809,7 @@ const eventsData = [
     id: 2,
     date: "12 MARCH",
     name: "DATACENTRE AND CLOUD INNOVATION SERIES",
+    conc:"",
     place: "Philippines",
     websiteLink: "https://dcis.traiconevents.com/philippines/",
     ticketsLink: "https://dcis.traiconevents.com/philippines/delegateregistration/",
@@ -795,6 +820,7 @@ const eventsData = [
     id: 3,
     date: "25 MARCH",
     name: "DATACENTRE AND CLOUD INNOVATION SERIES",
+    conc:"",
     place: "Australia",
     websiteLink: "https://dcis.traiconevents.com/australia/",
     ticketsLink: "https://dcis.traiconevents.com/australia/delegateregistration/",
@@ -805,6 +831,7 @@ const eventsData = [
     id: 4,
     date: "2 APRIL",
     name: "Rail Modernization summit 2025",
+    conc:"",
     place: "India",
     websiteLink: "https://rail.traiconevents.com/",
     ticketsLink: "#",
@@ -815,6 +842,7 @@ const eventsData = [
     id: 5,
     date: "10 APRIL",
     name: "DATACENTRE AND CLOUD INNOVATION SERIES",
+    conc:"",
     place: "SOUTH AFRICA",
     websiteLink: "https://dcis.traiconevents.com/southafrica/",
     ticketsLink: "https://dcis.traiconevents.com/southafrica/delegateregistration",
@@ -825,6 +853,7 @@ const eventsData = [
     id: 6,
     date: "22 - 23 APRIL",
     name: "OIL AND GAS TECHNOLOGY SUMMIT",
+    conc:"",
     place: "SAUDI ARABIA",
     websiteLink: "https://ogts.traiconevents.com/",
     ticketsLink: "https://ogts.traiconevents.com/delegateregistration",
@@ -835,6 +864,7 @@ const eventsData = [
     id: 7,
     date: "30 APRIL",
     name: "FINTECH REVOLUTION SUMMIT",
+    conc:"",
     place: "MANILA, PHILIPPINES",
     websiteLink: "https://fintech.traiconevents.com/ph/",
     ticketsLink: "https://hr.traiconevents.com/ph/delegateregistration",
@@ -845,6 +875,7 @@ const eventsData = [
     id: 8,
     date: "9 MAY",
     name: "FINTECH REVOLUTION SUMMIT",
+    conc:"",
     place: "CAMBODIA",
     websiteLink: "https://fintech.traiconevents.com/cambodia",
     ticketsLink: "#",
@@ -855,6 +886,7 @@ const eventsData = [
     id: 9,
     date: "16 MAY",
     name: "CYBER REVOLUTION SUMMIT",
+    conc:"",
     place: "INDIA",
     websiteLink: "https://cyber.traiconevents.com/india/",
     ticketsLink: "https://cyber.traiconevents.com/india/delegateregistration",
@@ -865,6 +897,7 @@ const eventsData = [
   id: 10,
   date: "23 MAY",
   name: "World HR Summit",
+  conc:"",
   place: "MANILA, PHILIPPINES",
   websiteLink: "https://hr.traiconevents.com/ph/",
   ticketsLink: "https://hr.traiconevents.com/ph/delegateregistration",
@@ -875,6 +908,7 @@ const eventsData = [
   id: 11,
   date: "27 MAY",
   name: "CYBER REVOLUTION SUMMIT",
+  conc:"",
   place: "MANILA, PHILIPPINES",
   websiteLink: "https://cyber.traiconevents.com/philippines",
   ticketsLink: "https://cyber.traiconevents.com/philippines/delegateregistration",
@@ -984,8 +1018,9 @@ console.log(currentGenre)
      <h2 className="top-event-date">{currentEvent.date}</h2>
      <div className="top-event-box">
      <div className="event-details">
-  <div className="event-name">{currentEvent.name}</div>
+     <div className="event-name">{currentEvent.name}</div>
   <div className="event-place">{currentEvent.place}</div>
+  <div className="conclude">{currentEvent.conc}</div>
   <div className="event-buttons">
     <a target="_blank" rel="noopener noreferrer" href={currentEvent.websiteLink} className="visit">Visit website</a>
     <a target="_blank" rel="noopener noreferrer" href={currentEvent.ticketsLink} className="get">get tickets</a>
@@ -1056,6 +1091,7 @@ console.log(currentGenre)
        <div className="event-details">
   <div className="event-name">FINTECH REVOLUTION SUMMIT</div>
   <div className="event-place">HOTEL CROWNE PLAZA MANAMA, BAHRAIN</div>
+  <div className="conclude">CONCLUDED</div>
   <div className="event-buttons">
     <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/bh/" className="visit">Visit website</a>
     <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/bh/delegateregistration" className="get">get tickets</a>
@@ -1634,7 +1670,7 @@ APRIL
      <div className="ticket-cut">
 
      </div>
-     <img src={frscomLogo} alt="" />
+     <img src={whrphLogo} alt="" />
          </div>
        </div>
       </EventBox>

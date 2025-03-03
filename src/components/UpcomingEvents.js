@@ -273,6 +273,19 @@ const CarouselWrapper = styled.div`
     border-radius: 1vw 0 0 0;
     display: none;
   }
+  .concluded-box{
+    position: absolute;
+    font-family: "concluded";
+    z-index: 5;
+    right: 1vw;
+    top: 5vw;
+    font-size: 1.5vw;
+    border: 1px solid red;
+    color: red;
+    padding: 0.3vw 1vw;
+    padding-top: 0.5vw;
+    border-radius: 1vw;
+  }
   
   & .active .eweb-link{
     display: block;
@@ -345,6 +358,13 @@ const CarouselWrapper = styled.div`
       font-size: 3vw;
       margin-top: 2vw;
     }
+    & .event-slide-box .event-logo{
+    position: absolute;
+    right: 4vw;
+    top: 4vw;
+  width: 24vw;
+   z-index: 2;
+  }
     .eweb-link{
     padding: 2vw 3vw;
   }
@@ -360,10 +380,32 @@ const CarouselWrapper = styled.div`
   .next {
     left: 10vw;
 }
+.concluded-box {
+    right: 2vw;
+    top: 12vw;
+    font-size: 4vw;
+    padding: 0.3vw 1vw;
+    padding-top: 1.5vw;
+    border-radius: 1vw;
+}
     }
     @media screen and (min-width:768px) and (max-width:1023px){
         width: 100%;
-
+        & .event-slide-box .event-logo{
+    position: absolute;
+    right: 4vw;
+    top: 4vw;
+  width: 24vw;
+   z-index: 2;
+  }
+  .concluded-box {
+    right: 2vw;
+    top: 12vw;
+    font-size: 4vw;
+    padding: 0.3vw 1vw;
+    padding-top: 1.5vw;
+    border-radius: 1vw;
+}
     .eventslide{
       height: 80vw;
       margin-top: 10vw;
@@ -582,9 +624,9 @@ useEffect(() => {
 useEffect(() => {
   const interval = setInterval(() => {
     autoplayRef.current();
-  }, 3000); // Change slides every 3 seconds
+  }, 50000); 
 
-  return () => clearInterval(interval); // Cleanup interval on unmount
+  return () => clearInterval(interval); 
 }, [instanceRef]);
 const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
   const [activeIndex, setActiveIndex] = useState(0);  
@@ -647,6 +689,9 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
               <div className="event-logo">
                   <img src={frsbhLogo} alt=""  className="eventLogo"/>
                 </div>
+                <div className="concluded-box">
+                  concluded
+                </div>
                 <div className="event-slide-overlay">
 
                 </div>
@@ -654,7 +699,7 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
 
 </div>
 <div className="eweb-link">
-  <a href="https://dcis.traiconevents.com/philippines/" target="_blank" rel="noopener noreferrer">VIEW EVENT</a>
+  <a href="https://fintech.traiconevents.com/bh/" target="_blank" rel="noopener noreferrer" disabled>VIEW EVENT</a>
 </div>
               <div className="event-slide-patch">
               <svg
@@ -1118,7 +1163,7 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
                 <img src={whrphBg} alt="whr" />
               </div>
               <div className="event-slide-name">World HR Summit</div>
-              <div className="eventdate-place">22<sup>nd</sup> - 23<sup>rd</sup> May 2025,Philippines</div>
+              <div className="eventdate-place">23<sup>rd</sup> May 2025,Philippines</div>
             </div>
             <div className={`keen-slider__slide eventslide ${activeIndex === 10 ? 'active' : ''}`}
               onClick={() => handleSlideClick(10)}
@@ -1166,7 +1211,7 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
                 <img src={crsphBg} alt="dcis" />
               </div>
               <div className="event-slide-name">Cyber Revolution Summit </div>
-              <div className="eventdate-place">25<sup>th</sup> - 26<sup>th</sup> May 2025, PHILIPPPINES</div>
+              <div className="eventdate-place">27<sup>th</sup> May 2025, PHILIPPPINES</div>
             </div>
             {/* <div className={`keen-slider__slide eventslide ${activeIndex === 11 ? 'active' : ''}`}
               onClick={() => handleSlideClick(11)}
