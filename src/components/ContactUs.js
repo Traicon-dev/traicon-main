@@ -543,6 +543,7 @@ const ContactUs = () => {
   
     const handleChange = (event) => {
       setSelectedValue(event.target.value);
+      setFields({ ...fields, selectOption: event.target.value }); // Update fields state
     };
 
     const handleSubmit = async (e) => {
@@ -619,7 +620,7 @@ const ContactUs = () => {
                 </InputCont>
                 <InputCont className="line2">
                 <label className={`label ${selectedValue && selectedValue !== "" ? "active" : ""}`}>Select Your Interest:</label>
-                <Selection1 onChange={handleChange} value={selectedValue}>
+                <Selection1 name="selectOption" onChange={handleChange} value={selectedValue}>
 						      <option style={{display:"none"}} className="blank_option"></option>
 						      <option value="exhibitor">Exhibitor</option>
 						      <option value="speaking">Speaker</option>

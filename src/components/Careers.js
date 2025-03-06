@@ -620,6 +620,7 @@ const Careers = () => {
     formData.append('currentPosition', fields.currentPosition);
     formData.append('currentCompany', fields.currentCompany);
     formData.append('jobRole', fields.jobRole);
+  
 
     // Check if a file is uploaded and append it
     if (fields.resumeUpload) {

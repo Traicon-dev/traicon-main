@@ -624,7 +624,7 @@ useEffect(() => {
 useEffect(() => {
   const interval = setInterval(() => {
     autoplayRef.current();
-  }, 50000); 
+  }, 5000); 
 
   return () => clearInterval(interval); 
 }, [instanceRef]);
