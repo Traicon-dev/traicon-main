@@ -809,7 +809,7 @@ const eventsData = [
     id: 2,
     date: "12 MARCH",
     name: "DATACENTRE AND CLOUD INNOVATION SERIES",
-    conc:"",
+    conc:"concluded",
     place: "Philippines",
     websiteLink: "https://dcis.traiconevents.com/philippines/",
     ticketsLink: "https://dcis.traiconevents.com/philippines/delegateregistration/",
@@ -906,7 +906,7 @@ const eventsData = [
 },
 {
   id: 11,
-  date: "27 MAY",
+  date: "27 JUNE",
   name: "CYBER REVOLUTION SUMMIT",
   conc:"",
   place: "MANILA, PHILIPPINES",
@@ -1152,6 +1152,7 @@ console.log(currentGenre)
        <div className="event-details">
   <div className="event-name">DATACENTRE AND CLOUD INNOVATION SERIES</div>
   <div className="event-place">MANILA, PHILIPPINES</div>
+  <div className="conclude">CONCLUDED</div>
   <div className="event-buttons">
     <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/philippines/" className="visit">Visit website</a>
     <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/philippines/delegateregistration" className="get">get tickets</a>
@@ -1679,7 +1680,7 @@ APRIL
        <div className="event-date-box">
      <div className="date-container">
     <div className="month">
- MAY
+ JUNE
     </div>
     <div className="date">
      <p>27<sup>th</sup></p> 

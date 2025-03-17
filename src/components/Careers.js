@@ -16,8 +16,8 @@ const CareersContainer = styled.section`
   flex-direction: column;
   margin: 0 auto;
   overflow: hidden;
-
 `;
+
 const CareerTop = styled.div`
   position: relative;
   width: 100%;
@@ -637,7 +637,7 @@ const Careers = () => {
         },
       });
 
-      if (response.data.success) {
+      if (response.data.status === "success") {
         alert('Your application has been sent successfully!');
         setFields({
           firstName: '',

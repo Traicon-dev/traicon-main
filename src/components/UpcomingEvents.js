@@ -740,6 +740,9 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
               <div className="event-logo">
                   <img src={dcisphLogo} alt=""  className="eventLogo"/>
                 </div>
+                <div className="concluded-box">
+                  concluded
+                </div>
                 <div className="event-slide-overlay">
 
                 </div>
@@ -1211,7 +1214,7 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
                 <img src={crsphBg} alt="dcis" />
               </div>
               <div className="event-slide-name">Cyber Revolution Summit </div>
-              <div className="eventdate-place">27<sup>th</sup> May 2025, PHILIPPPINES</div>
+              <div className="eventdate-place">27<sup>th</sup> JUNE 2025, PHILIPPPINES</div>
             </div>
             {/* <div className={`keen-slider__slide eventslide ${activeIndex === 11 ? 'active' : ''}`}
               onClick={() => handleSlideClick(11)}
