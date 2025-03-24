@@ -818,17 +818,6 @@ const eventsData = [
   },
   {
     id: 3,
-    date: "25 MARCH",
-    name: "DATACENTRE AND CLOUD INNOVATION SERIES",
-    conc:"",
-    place: "Australia",
-    websiteLink: "https://dcis.traiconevents.com/australia/",
-    ticketsLink: "https://dcis.traiconevents.com/australia/delegateregistration/",
-    backgroundImage: dcisausBg, 
-    logo: dcisSaLogo, 
-  },
-  {
-    id: 4,
     date: "2 APRIL",
     name: "Rail Modernization summit 2025",
     conc:"",
@@ -839,18 +828,7 @@ const eventsData = [
     logo: rmsIndLogo, 
   },
   {
-    id: 5,
-    date: "10 APRIL",
-    name: "DATACENTRE AND CLOUD INNOVATION SERIES",
-    conc:"",
-    place: "SOUTH AFRICA",
-    websiteLink: "https://dcis.traiconevents.com/southafrica/",
-    ticketsLink: "https://dcis.traiconevents.com/southafrica/delegateregistration",
-    backgroundImage:dcisSaBg , 
-    logo: dcisSaLogo, 
-  },
-  {
-    id: 6,
+    id: 4,
     date: "22 - 23 APRIL",
     name: "OIL AND GAS TECHNOLOGY SUMMIT",
     conc:"",
@@ -861,7 +839,7 @@ const eventsData = [
     logo: OgtsSaudi, 
   },
   {
-    id: 7,
+    id: 5,
     date: "30 APRIL",
     name: "FINTECH REVOLUTION SUMMIT",
     conc:"",
@@ -872,7 +850,7 @@ const eventsData = [
     logo: frsphLogo,
   },
   {
-    id: 8,
+    id: 6,
     date: "9 MAY",
     name: "FINTECH REVOLUTION SUMMIT",
     conc:"",
@@ -883,7 +861,7 @@ const eventsData = [
     logo: frscomLogo,
   },
   {
-    id: 9,
+    id: 7,
     date: "16 MAY",
     name: "CYBER REVOLUTION SUMMIT",
     conc:"",
@@ -894,7 +872,7 @@ const eventsData = [
     logo: crsIndLogo,
   },
   {
-  id: 10,
+  id: 8,
   date: "23 MAY",
   name: "World HR Summit",
   conc:"",
@@ -905,7 +883,7 @@ const eventsData = [
   logo: whrphLogo,
 },
 {
-  id: 11,
+  id: 9,
   date: "27 JUNE",
   name: "CYBER REVOLUTION SUMMIT",
   conc:"",
@@ -914,6 +892,17 @@ const eventsData = [
   ticketsLink: "https://cyber.traiconevents.com/philippines/delegateregistration",
   backgroundImage: crsphBg, 
   logo: crsphLogo,
+},
+{
+  id: 10,
+  date: "09 JULY",
+  name: "DATACENTRE AND CLOUD INNOVATION SERIES",
+  conc:"",
+  place: "Australia",
+  websiteLink: "https://dcis.traiconevents.com/australia/",
+  ticketsLink: "https://dcis.traiconevents.com/australia/delegateregistration/",
+  backgroundImage: dcisausBg, 
+  logo: dcisSaLogo, 
 },
 // {
 //   id: 12,
@@ -1142,7 +1131,7 @@ console.log(currentGenre)
    MARCH
     </div>
     <div className="date">
-     <p>25<sup>th</sup></p> 
+     <p>12<sup>th</sup></p> 
     </div>
     <div className="year">
       2025
@@ -1260,126 +1249,6 @@ APRIL
        <div className="event-date-box">
      <div className="date-container">
     <div className="month">
-  MARCH
-    </div>
-    <div className="date">
-     <p>25<sup>th</sup></p> 
-    </div>
-    <div className="year">
-      2025
-    </div>
-     </div>
-       </div>
-       <div className="event-details">
-  <div className="event-name">DATACENTRE AND CLOUD INNOVATION SERIES</div>
-  <div className="event-place">AUSTRALIA</div>
-  <div className="event-buttons">
-    <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/australia/" className="visit">Visit website</a>
-    <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/australia/delegateregistration" className="get">get tickets</a>
-  </div>
-       </div>
-       <div className="event-logo-part">
-         <div className="event-logo-box">
-          <div className="event-logo-glow">
-
-          </div>
-     <div className="cuts">
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-     </div>
-     <div className="ticket-cut">
-
-     </div>
-     <img src={dcisausLogo} alt="" />
-         </div>
-       </div>
-      </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(4)}
-       style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
-       <div className="event-date-box">
-     <div className="date-container">
-    <div className="month">
-   APRIL
-    </div>
-    <div className="date">
-     <p>10<sup>th</sup></p> 
-    </div>
-    <div className="year">
-      2025
-    </div>
-     </div>
-       </div>
-       <div className="event-details">
-  <div className="event-name">DATACENTRE AND CLOUD INNOVATION SERIES</div>
-  <div className="event-place">SOUTH AFRICA</div>
-  <div className="event-buttons">
-    <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/southafrica/" className="visit">Visit website</a>
-    <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/southafrica/delegateregistration" className="get">get tickets</a>
-  </div>
-       </div>
-       <div className="event-logo-part">
-         <div className="event-logo-box">
-          <div className="event-logo-glow">
-
-          </div>
-     <div className="cuts">
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-     </div>
-     <div className="ticket-cut">
-
-     </div>
-     <img src={dcisSaLogo} alt="" />
-         </div>
-       </div>
-      </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(5)}
-       style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
-       <div className="event-date-box">
-     <div className="date-container">
-    <div className="month">
    APRIL
     </div>
     <div className="date">
@@ -1435,7 +1304,7 @@ APRIL
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(6)}
+      <EventBox   onClick={() => handleEventBoxClick(4)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1495,7 +1364,7 @@ APRIL
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(7)}
+      <EventBox   onClick={() => handleEventBoxClick(5)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1555,7 +1424,7 @@ APRIL
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(8)}
+      <EventBox   onClick={() => handleEventBoxClick(6)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1615,7 +1484,7 @@ APRIL
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(9)}
+      <EventBox   onClick={() => handleEventBoxClick(7)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1675,7 +1544,7 @@ APRIL
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(10)}
+      <EventBox   onClick={() => handleEventBoxClick(8)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1732,6 +1601,66 @@ APRIL
 
      </div>
      <img src={crsphLogo} alt="" />
+         </div>
+       </div>
+      </EventBox>
+      <EventBox   onClick={() => handleEventBoxClick(9)}
+       style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
+       <div className="event-date-box">
+     <div className="date-container">
+    <div className="month">
+  JULY
+    </div>
+    <div className="date">
+     <p>9<sup>th</sup></p> 
+    </div>
+    <div className="year">
+      2025
+    </div>
+     </div>
+       </div>
+       <div className="event-details">
+  <div className="event-name">DATACENTRE AND CLOUD INNOVATION SERIES</div>
+  <div className="event-place">AUSTRALIA</div>
+  <div className="event-buttons">
+    <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/australia/" className="visit">Visit website</a>
+    <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/australia/delegateregistration" className="get">get tickets</a>
+  </div>
+       </div>
+       <div className="event-logo-part">
+         <div className="event-logo-box">
+          <div className="event-logo-glow">
+
+          </div>
+     <div className="cuts">
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+     </div>
+     <div className="ticket-cut">
+
+     </div>
+     <img src={dcisausLogo} alt="" />
          </div>
        </div>
       </EventBox>
