@@ -820,26 +820,26 @@ const eventsData = [
     id: 3,
     date: "30 APRIL",
     name: "FINTECH REVOLUTION SUMMIT",
-    conc:"",
+    conc:"concluded",
     place: "MANILA, PHILIPPINES",
     websiteLink: "https://fintech.traiconevents.com/ph/",
     ticketsLink: "https://hr.traiconevents.com/ph/delegateregistration",
     backgroundImage: frsphBg, 
     logo: frsphLogo,
   },
+  // {
+  //   id: 4,
+  //   date: "9 MAY",
+  //   name: "FINTECH REVOLUTION SUMMIT",
+  //   conc:"",
+  //   place: "CAMBODIA",
+  //   websiteLink: "https://fintech.traiconevents.com/cambodia",
+  //   ticketsLink: "#",
+  //   backgroundImage: frscomBg, 
+  //   logo: frscomLogo,
+  // },
   {
     id: 4,
-    date: "9 MAY",
-    name: "FINTECH REVOLUTION SUMMIT",
-    conc:"",
-    place: "CAMBODIA",
-    websiteLink: "https://fintech.traiconevents.com/cambodia",
-    ticketsLink: "#",
-    backgroundImage: frscomBg, 
-    logo: frscomLogo,
-  },
-  {
-    id: 5,
     date: "23 MAY",
     name: "World HR Summit",
     conc:"",
@@ -850,7 +850,7 @@ const eventsData = [
     logo: whrphLogo,
   },
   {
-    id: 6,
+    id: 5,
     date: "28 MAY",
     name: "CYBER REVOLUTION SUMMIT",
     conc:"",
@@ -861,7 +861,7 @@ const eventsData = [
     logo: crsIndLogo,
   },
 {
-  id: 7,
+  id: 6,
   date: "12 JUNE",
   name: "Rail Modernization summit 2025",
   conc:"",
@@ -872,7 +872,7 @@ const eventsData = [
   logo: rmsIndLogo, 
 },
 {
-  id: 8,
+  id: 7,
   date: "27 JUNE",
   name: "CYBER REVOLUTION SUMMIT",
   conc:"",
@@ -883,7 +883,7 @@ const eventsData = [
   logo: crsphLogo,
 },
 {
-  id: 9,
+  id: 8,
   date: "09 JULY",
   name: "DATACENTRE AND CLOUD INNOVATION SERIES",
   conc:"",
@@ -894,7 +894,7 @@ const eventsData = [
   logo: dcisSaLogo, 
 },
 {
-  id: 10,
+  id: 9,
   date: "07 - 08 SEPTEMBER",
   name: "OIL AND GAS TECHNOLOGY SUMMIT",
   conc:"",
@@ -1203,6 +1203,7 @@ console.log(currentGenre)
        <div className="event-details">
   <div className="event-name">FINTECH REVOLUTION SUMMIT</div>
   <div className="event-place">PHILIPPINES</div>
+  <div className="conclude">CONCLUDED</div> 
   <div className="event-buttons">
     <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/ph/" className="visit">Visit website</a>
     <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/ph/delegateregistration" className="get">get tickets</a>
@@ -1246,66 +1247,6 @@ console.log(currentGenre)
        </div>
       </EventBox>
       <EventBox   onClick={() => handleEventBoxClick(3)}
-       style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
-       <div className="event-date-box">
-     <div className="date-container">
-    <div className="month">
- MAY
-    </div>
-    <div className="date">
-     <p>9<sup>th</sup></p> 
-    </div>
-    <div className="year">
-      2025
-    </div>
-     </div>
-       </div>
-       <div className="event-details">
-  <div className="event-name">FINTECH REVOLUTION SUMMIT</div>
-  <div className="event-place">CAMBODIA</div>
-  <div className="event-buttons">
-    <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/cambodia/" className="visit">Visit website</a>
-    <a target="_blank" rel="noopener noreferrer" href="#" className="get">get tickets</a>
-  </div>
-       </div>
-       <div className="event-logo-part">
-         <div className="event-logo-box">
-          <div className="event-logo-glow">
-
-          </div>
-     <div className="cuts">
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-     </div>
-     <div className="ticket-cut">
-
-     </div>
-     <img src={frscomLogo} alt="" />
-         </div>
-       </div>
-      </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(4)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1365,7 +1306,7 @@ console.log(currentGenre)
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(5)}
+      <EventBox   onClick={() => handleEventBoxClick(4)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1425,7 +1366,7 @@ console.log(currentGenre)
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(6)}
+      <EventBox   onClick={() => handleEventBoxClick(5)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1485,7 +1426,7 @@ JUNE
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(7)}
+      <EventBox   onClick={() => handleEventBoxClick(6)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1545,7 +1486,7 @@ JUNE
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(8)}
+      <EventBox   onClick={() => handleEventBoxClick(7)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1605,7 +1546,7 @@ JUNE
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(9)}
+      <EventBox   onClick={() => handleEventBoxClick(8)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
