@@ -21,18 +21,15 @@ import dcisausBg from "../images/events/dcis/dcis_aus_bg.jpg"
 import dcisausLogo from "../images/events/dcis/dcis_aus_logo.png"
 import frsphBg from "../images/events/frs/fintech_ph_bg.jpg"
 import frsphLogo from "../images/events/frs/frs_ph_logo.svg"
-import frscomBg from "../images/events/frs/fintech_comb_bg.jpg"
-import frscomLogo from "../images/events/frs/frs_comb_logo.png"
 import rmsIndBg from "../images/events/indian/rms_bg.jpg"
 import rmsIndLogo from "../images/events/indian/RMS logo 2025.png"
 import crsIndBg from "../images/events/indian/cyber_ind_bg.jpg"
 import crsIndLogo from "../images/events/indian/cyber_ind_logo.svg"
-// import amsIndBg from "../images/events/indian/ams_bg.jpg"
-// import amsIndLogo from "../images/events/indian/ams_logo.png"
-// import dcisindBg from "../images/events/dcis/dcis__ind_bg.jpg"
-// import dcisindLogo from "../images/events/dcis/dcis_ind_logo.png"
-// import idcIndBg from "../images/events/indian/idc_bg.jpg"
-// import idcIndLogo from "../images/events/indian/idc_logo.png"
+import crsbrBg from "../images/events/crs/cyber_brunei_bg.jpg"
+import crsbrLogo from "../images/events/crs/cyber+brunei_logo.png"
+import frsmlBg from "../images/events/frs/frs_malaysia_bg.jpg"
+import frsmlLogo from "../images/events/frs/frs_malaysia_logo.svg"
+
 
 
 // Styled components for the carousel
@@ -842,6 +839,9 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
               <div className="event-logo">
                   <img src={whrphLogo} alt=""  className="eventLogo"/>
                 </div>
+                     <div className="concluded-box">
+                  concluded
+                </div>
                 <div className="event-slide-overlay">
 
                 </div>
@@ -885,54 +885,6 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
             </div>
             <div className={`keen-slider__slide eventslide ${activeIndex === 4 ? 'active' : ''}`}
               onClick={() => handleSlideClick(4)}
-            >
-              <div className="event-slide-box">
-                <div className="event-logo">
-                  <img src={crsIndLogo} alt=""  className="eventLogo"/>
-                </div>
-                <div className="event-slide-overlay">
-
-                </div>
-                <div className="event-slide-overlay2">
-
-</div>
-<div className="eweb-link">
-  <a href="https://cyber.traiconevents.com/india" target="_blank" rel="noopener noreferrer">VIEW EVENT</a>
-</div>
-              <div className="event-slide-patch">
-              <svg
-  xmlns="http://www.w3.org/2000/svg"
-  version="1.1"
-  xmlnsXlink="http://www.w3.org/1999/xlink"
-  x="0"
-  y="0"
-  viewBox="0 0 512 512"
-  style={{ enableBackground: "new 0 0 512 512" }}
-  xmlSpace="preserve"
->
-  <defs>
-    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style={{ stopColor: "#2f9cda", stopOpacity: 0.1 }} />
-      <stop offset="50%" style={{ stopColor: "#2f9cda", stopOpacity: 0.9 }} />
-      <stop offset="100%" style={{ stopColor: "#2f9cda", stopOpacity: 1 }} />
-    </linearGradient>
-  </defs>
-  <g>
-    <path
-      d="M485.3 355.5v-199c0-20.4-10.9-39.2-28.5-49.4L284.5 7.6c-17.6-10.2-39.4-10.2-57 0L55.2 107.1c-17.6 10.2-28.5 29-28.5 49.4v199c0 20.4 10.9 39.2 28.5 49.4l172.3 99.5c17.6 10.2 39.4 10.2 57 0l172.3-99.5c17.7-10.2 28.5-29 28.5-49.4z"
-      fill="url(#gradient1)"
-    />
-  </g>
-</svg>
-
-              </div>
-                <img src={crsIndBg} alt="Ogts" />
-              </div>
-              <div className="event-slide-name">Cyber Revolution Summit</div>
-              <div className="eventdate-place"> 28<sup>th</sup> MAY 2025, INDIA</div>
-            </div>
-            <div className={`keen-slider__slide eventslide ${activeIndex === 5 ? 'active' : ''}`}
-              onClick={() => handleSlideClick(5)}
             >
                   <div className="event-slide-box">
               <div className="event-logo">
@@ -978,6 +930,54 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
               </div>
               <div className="event-slide-name">Rail Modernization summit 2025</div>
               <div className="eventdate-place">12<sup>th</sup> JUNE 2025, NEW DELHI, INDIA</div>
+            </div>
+            <div className={`keen-slider__slide eventslide ${activeIndex === 5 ? 'active' : ''}`}
+              onClick={() => handleSlideClick(5)}
+            >
+                  <div className="event-slide-box">
+              <div className="event-logo">
+                  <img src={crsbrLogo} alt=""  className="eventLogo"/>
+                </div>
+                <div className="event-slide-overlay">
+
+                </div>
+                <div className="event-slide-overlay2">
+
+</div>
+<div className="eweb-link">
+  <a href="https://cyber.traiconevents.com/brunei/" target="_blank" rel="noopener noreferrer">VIEW EVENT</a>
+</div>
+              <div className="event-slide-patch">
+              <svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+  x="0"
+  y="0"
+  viewBox="0 0 512 512"
+  style={{ enableBackground: "new 0 0 512 512" }}
+  xmlSpace="preserve"
+>
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style={{ stopColor: "#2f9cda", stopOpacity: 0.1 }} />
+      <stop offset="50%" style={{ stopColor: "#2f9cda", stopOpacity: 0.9 }} />
+      <stop offset="100%" style={{ stopColor: "#2f9cda", stopOpacity: 1 }} />
+    </linearGradient>
+  </defs>
+  <g>
+    <path
+      d="M485.3 355.5v-199c0-20.4-10.9-39.2-28.5-49.4L284.5 7.6c-17.6-10.2-39.4-10.2-57 0L55.2 107.1c-17.6 10.2-28.5 29-28.5 49.4v199c0 20.4 10.9 39.2 28.5 49.4l172.3 99.5c17.6 10.2 39.4 10.2 57 0l172.3-99.5c17.7-10.2 28.5-29 28.5-49.4z"
+      fill="url(#gradient1)"
+    />
+  </g>
+</svg>
+
+              </div>
+                <img src={crsbrBg} alt="Ogts" />
+              </div>
+              <div className="event-slide-name">Cyber Revolution Summit 2025</div>
+              <div className="eventdate-place">17<sup>th</sup> JUNE 2025, BANDAR SERI BEGAWAN, BRUNEI</div>
             </div>
             <div className={`keen-slider__slide eventslide ${activeIndex === 6 ? 'active' : ''}`}
               onClick={() => handleSlideClick(6)}
@@ -1075,8 +1075,104 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
               <div className="event-slide-name">Datacentre And Cloud Innovation Series </div>
               <div className="eventdate-place">09<sup>th</sup> JULY 2025, AUSTRALIA</div>
             </div>
-            <div className={`keen-slider__slide eventslide ${activeIndex === 8 ? 'active' : ''}`}
+                <div className={`keen-slider__slide eventslide ${activeIndex === 8 ? 'active' : ''}`}
               onClick={() => handleSlideClick(8)}
+            >
+              <div className="event-slide-box">
+                <div className="event-logo">
+                  <img src={crsIndLogo} alt=""  className="eventLogo"/>
+                </div>
+                <div className="event-slide-overlay">
+
+                </div>
+                <div className="event-slide-overlay2">
+
+</div>
+<div className="eweb-link">
+  <a href="https://cyber.traiconevents.com/india" target="_blank" rel="noopener noreferrer">VIEW EVENT</a>
+</div>
+              <div className="event-slide-patch">
+              <svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+  x="0"
+  y="0"
+  viewBox="0 0 512 512"
+  style={{ enableBackground: "new 0 0 512 512" }}
+  xmlSpace="preserve"
+>
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style={{ stopColor: "#2f9cda", stopOpacity: 0.1 }} />
+      <stop offset="50%" style={{ stopColor: "#2f9cda", stopOpacity: 0.9 }} />
+      <stop offset="100%" style={{ stopColor: "#2f9cda", stopOpacity: 1 }} />
+    </linearGradient>
+  </defs>
+  <g>
+    <path
+      d="M485.3 355.5v-199c0-20.4-10.9-39.2-28.5-49.4L284.5 7.6c-17.6-10.2-39.4-10.2-57 0L55.2 107.1c-17.6 10.2-28.5 29-28.5 49.4v199c0 20.4 10.9 39.2 28.5 49.4l172.3 99.5c17.6 10.2 39.4 10.2 57 0l172.3-99.5c17.7-10.2 28.5-29 28.5-49.4z"
+      fill="url(#gradient1)"
+    />
+  </g>
+</svg>
+
+              </div>
+                <img src={crsIndBg} alt="Ogts" />
+              </div>
+              <div className="event-slide-name">Cyber Revolution Summit</div>
+              <div className="eventdate-place"> 10<sup>th</sup> JULY 2025, INDIA</div>
+            </div>
+                <div className={`keen-slider__slide eventslide ${activeIndex === 9 ? 'active' : ''}`}
+              onClick={() => handleSlideClick(9)}
+            >
+              <div className="event-slide-box">
+                <div className="event-logo">
+                  <img src={frsmlLogo} alt=""  className="eventLogo"/>
+                </div>
+                <div className="event-slide-overlay">
+
+                </div>
+                <div className="event-slide-overlay2">
+
+</div>
+<div className="eweb-link">
+  <a href="https://fintech.traiconevents.com/malaysia" target="_blank" rel="noopener noreferrer">VIEW EVENT</a>
+</div>
+              <div className="event-slide-patch">
+              <svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+  x="0"
+  y="0"
+  viewBox="0 0 512 512"
+  style={{ enableBackground: "new 0 0 512 512" }}
+  xmlSpace="preserve"
+>
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style={{ stopColor: "#2f9cda", stopOpacity: 0.1 }} />
+      <stop offset="50%" style={{ stopColor: "#2f9cda", stopOpacity: 0.9 }} />
+      <stop offset="100%" style={{ stopColor: "#2f9cda", stopOpacity: 1 }} />
+    </linearGradient>
+  </defs>
+  <g>
+    <path
+      d="M485.3 355.5v-199c0-20.4-10.9-39.2-28.5-49.4L284.5 7.6c-17.6-10.2-39.4-10.2-57 0L55.2 107.1c-17.6 10.2-28.5 29-28.5 49.4v199c0 20.4 10.9 39.2 28.5 49.4l172.3 99.5c17.6 10.2 39.4 10.2 57 0l172.3-99.5c17.7-10.2 28.5-29 28.5-49.4z"
+      fill="url(#gradient1)"
+    />
+  </g>
+</svg>
+
+              </div>
+                <img src={frsmlBg} alt="Ogts" />
+              </div>
+              <div className="event-slide-name">Fintech Revolution Summit</div>
+              <div className="eventdate-place"> 23<sup>rd</sup> JULY 2025, Malaysia</div>
+            </div>
+            <div className={`keen-slider__slide eventslide ${activeIndex === 10 ? 'active' : ''}`}
+              onClick={() => handleSlideClick(10)}
             >
               <div className="event-slide-box">
                 <div className="event-logo el2">
@@ -1123,6 +1219,7 @@ const [selectedGenre, setSelectedGenre] = useState("ALL GENRES");
               <div className="event-slide-name">Oil And Gas Technology Summit</div>
               <div className="eventdate-place">07<sup>th</sup> - 08<sup>th</sup> SEPTEMBER 2025,SAUDI ARABIA</div>
             </div>
+            
             {/* <div className={`keen-slider__slide eventslide ${activeIndex === 11 ? 'active' : ''}`}
               onClick={() => handleSlideClick(11)}
             >

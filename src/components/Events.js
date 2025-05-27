@@ -19,12 +19,14 @@ import dcisausBg from "../images/events/dcis/dcis_aus_bg.jpg"
 import dcisausLogo from "../images/events/dcis/dcis_aus_logo.png"
 import frsphBg from "../images/events/frs/fintech_ph_bg.jpg"
 import frsphLogo from "../images/events/frs/frs_ph_logo.svg"
-import frscomBg from "../images/events/frs/fintech_comb_bg.jpg"
-import frscomLogo from "../images/events/frs/frs_comb_logo.png"
 import rmsIndBg from "../images/events/indian/rms_bg.jpg"
 import rmsIndLogo from "../images/events/indian/RMS logo 2025.png"
 import crsIndBg from "../images/events/indian/cyber_ind_bg.jpg"
 import crsIndLogo from "../images/events/indian/cyber_ind_logo.svg"
+import crsbrBg from "../images/events/crs/cyber_brunei_bg.jpg"
+import crsbrLogo from "../images/events/crs/cyber+brunei_logo.png"
+import frsmlBg from "../images/events/frs/frs_malaysia_bg.jpg"
+import frsmlLogo from "../images/events/frs/frs_malaysia_logo.svg"
 
 
 const EventContainer = styled.div`
@@ -842,26 +844,15 @@ const eventsData = [
     id: 4,
     date: "23 MAY",
     name: "World HR Summit",
-    conc:"",
+    conc:"concluded",
     place: "MANILA, PHILIPPINES",
     websiteLink: "https://hr.traiconevents.com/ph/",
     ticketsLink: "https://hr.traiconevents.com/ph/delegateregistration",
     backgroundImage: whrphBg, 
     logo: whrphLogo,
   },
-  {
-    id: 5,
-    date: "28 MAY",
-    name: "CYBER REVOLUTION SUMMIT",
-    conc:"",
-    place: "INDIA",
-    websiteLink: "https://cyber.traiconevents.com/india/",
-    ticketsLink: "https://cyber.traiconevents.com/india/delegateregistration",
-    backgroundImage: crsIndBg, 
-    logo: crsIndLogo,
-  },
 {
-  id: 6,
+  id: 5,
   date: "12 JUNE",
   name: "Rail Modernization summit 2025",
   conc:"",
@@ -870,6 +861,17 @@ const eventsData = [
   ticketsLink: "#",
   backgroundImage: rmsIndBg, 
   logo: rmsIndLogo, 
+},
+{
+  id: 6,
+  date: "17 JUNE",
+  name: "Cyber Revolution Summit 2025",
+  conc:"",
+  place: "Bandar Seri Begawan, Brunei",
+  websiteLink: "https://cyber.traiconevents.com/brunei/",
+  ticketsLink: "#",
+  backgroundImage: crsbrBg, 
+  logo: crsbrLogo, 
 },
 {
   id: 7,
@@ -894,7 +896,29 @@ const eventsData = [
   logo: dcisSaLogo, 
 },
 {
-  id: 9,
+    id: 9,
+    date: "10 JULY",
+    name: "CYBER REVOLUTION SUMMIT",
+    conc:"",
+    place: "INDIA",
+    websiteLink: "https://cyber.traiconevents.com/india/",
+    ticketsLink: "https://cyber.traiconevents.com/india/delegateregistration",
+    backgroundImage: crsIndBg, 
+    logo: crsIndLogo,
+  },
+  {
+    id: 10,
+    date: "23 JULY",
+    name: "FINTECH REVOLUTION SUMMIT",
+    conc:"",
+    place: "MALAYSIA",
+    websiteLink: "https://fintech.traiconevents.com/malaysia/",
+    ticketsLink: "https://fintech.traiconevents.com/malaysia/delegateregistration",
+    backgroundImage: frsmlBg, 
+    logo: frsmlLogo,
+  },
+{
+  id: 11,
   date: "07 - 08 SEPTEMBER",
   name: "OIL AND GAS TECHNOLOGY SUMMIT",
   conc:"",
@@ -904,6 +928,7 @@ const eventsData = [
   backgroundImage:ogts, 
   logo: OgtsSaudi, 
 },
+
 
 // {
 //   id: 12,
@@ -1264,6 +1289,7 @@ console.log(currentGenre)
        <div className="event-details">
   <div className="event-name">WORLD HR SUMMIT</div>
   <div className="event-place">MANILA, PHILIPPINES</div>
+    <div className="conclude">CONCLUDED</div> 
   <div className="event-buttons">
     <a target="_blank" rel="noopener noreferrer" href="https://hr.traiconevents.com/ph/" className="visit">Visit website</a>
     <a target="_blank" rel="noopener noreferrer" href="https://hr.traiconevents.com/ph/delegateregistration" className="get">get tickets</a>
@@ -1307,66 +1333,6 @@ console.log(currentGenre)
        </div>
       </EventBox>
       <EventBox   onClick={() => handleEventBoxClick(4)}
-       style={{display:currentGenre==="ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none"}}>
-       <div className="event-date-box">
-     <div className="date-container">
-    <div className="month">
- MAY
-    </div>
-    <div className="date">
-     <p>28<sup>th</sup></p> 
-    </div>
-    <div className="year">
-      2025
-    </div>
-     </div>
-       </div>
-       <div className="event-details">
-  <div className="event-name">CYBER REVOLUTION SUMMIT</div>
-  <div className="event-place">NEW DELHI, INDIA</div>
-  <div className="event-buttons">
-    <a target="_blank" rel="noopener noreferrer" href="https://cyber.traiconevents.com/india/" className="visit">Visit website</a>
-    <a target="_blank" rel="noopener noreferrer" href="#" className="get">get tickets</a>
-  </div>
-       </div>
-       <div className="event-logo-part">
-         <div className="event-logo-box">
-          <div className="event-logo-glow">
-
-          </div>
-     <div className="cuts">
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-      <div className="cuts-dot"></div>
-     </div>
-     <div className="ticket-cut">
-
-     </div>
-     <img src={crsIndLogo} alt="" />
-         </div>
-       </div>
-      </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(5)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
@@ -1423,6 +1389,66 @@ JUNE
 
      </div>
      <img src={rmsIndLogo} alt="" />
+         </div>
+       </div>
+      </EventBox>
+      <EventBox   onClick={() => handleEventBoxClick(5)}
+       style={{display:currentGenre==="ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none"}}>
+       <div className="event-date-box">
+     <div className="date-container">
+    <div className="month">
+JUNE
+    </div>
+    <div className="date">
+     <p>17<sup>th</sup></p> 
+    </div>
+    <div className="year">
+      2025
+    </div>
+     </div>
+       </div>
+       <div className="event-details">
+  <div className="event-name">CYBER REVOLUTION SUMMIT</div>
+  <div className="event-place">BANDAR SERI BEGAWAN, BRUNEI</div>
+  <div className="event-buttons">
+    <a target="_blank" rel="noopener noreferrer" href="https://cyber.traiconevents.com/brunei/" className="visit">Visit website</a>
+    <a target="_blank" rel="noopener noreferrer" href="https://cyber.traiconevents.com/brunei/delegateregistration" className="get">get tickets</a>
+  </div>
+       </div>
+       <div className="event-logo-part">
+         <div className="event-logo-box">
+          <div className="event-logo-glow">
+
+          </div>
+     <div className="cuts">
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+     </div>
+     <div className="ticket-cut">
+
+     </div>
+     <img src={crsbrLogo} alt="" />
          </div>
        </div>
       </EventBox>
@@ -1546,7 +1572,127 @@ JUNE
          </div>
        </div>
       </EventBox>
-      <EventBox   onClick={() => handleEventBoxClick(8)}
+        <EventBox   onClick={() => handleEventBoxClick(8)}
+       style={{display:currentGenre==="ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none"}}>
+       <div className="event-date-box">
+     <div className="date-container">
+    <div className="month">
+ JULY
+    </div>
+    <div className="date">
+     <p>10<sup>th</sup></p> 
+    </div>
+    <div className="year">
+      2025
+    </div>
+     </div>
+       </div>
+       <div className="event-details">
+  <div className="event-name">CYBER REVOLUTION SUMMIT</div>
+  <div className="event-place">NEW DELHI, INDIA</div>
+  <div className="event-buttons">
+    <a target="_blank" rel="noopener noreferrer" href="https://cyber.traiconevents.com/india/" className="visit">Visit website</a>
+    <a target="_blank" rel="noopener noreferrer" href="#" className="get">get tickets</a>
+  </div>
+       </div>
+       <div className="event-logo-part">
+         <div className="event-logo-box">
+          <div className="event-logo-glow">
+
+          </div>
+     <div className="cuts">
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+     </div>
+     <div className="ticket-cut">
+
+     </div>
+     <img src={crsIndLogo} alt="" />
+         </div>
+       </div>
+      </EventBox>
+             <EventBox   onClick={() => handleEventBoxClick(9)}
+       style={{display:currentGenre==="ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none"}}>
+       <div className="event-date-box">
+     <div className="date-container">
+    <div className="month">
+ JULY
+    </div>
+    <div className="date">
+     <p>23<sup>rd</sup></p> 
+    </div>
+    <div className="year">
+      2025
+    </div>
+     </div>
+       </div>
+       <div className="event-details">
+  <div className="event-name">FINTECH REVOLUTION SUMMIT</div>
+  <div className="event-place">MALAYSIA</div>
+  <div className="event-buttons">
+    <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/malaysia/" className="visit">Visit website</a>
+    <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/malaysia/" className="get">get tickets</a>
+  </div>
+       </div>
+       <div className="event-logo-part">
+         <div className="event-logo-box">
+          <div className="event-logo-glow">
+
+          </div>
+     <div className="cuts">
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+      <div className="cuts-dot"></div>
+     </div>
+     <div className="ticket-cut">
+
+     </div>
+     <img src={frsmlLogo} alt="" />
+         </div>
+       </div>
+      </EventBox>
+      <EventBox   onClick={() => handleEventBoxClick(10)}
        style={{display:currentGenre==="ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none"}}>
        <div className="event-date-box">
      <div className="date-container">
