@@ -868,7 +868,7 @@ const eventsData = [
     id: 6,
     date: "27 JUNE",
     name: "CYBER REVOLUTION SUMMIT",
-    conc: "",
+    conc: "Concluded",
     place: "MANILA, PHILIPPINES",
     websiteLink: "https://cyber.traiconevents.com/philippines",
     ticketsLink: "https://cyber.traiconevents.com/philippines/delegateregistration",
@@ -877,28 +877,6 @@ const eventsData = [
   },
   {
     id: 7,
-    date: "09 JULY",
-    name: "DATACENTRE AND CLOUD INNOVATION SERIES",
-    conc: "",
-    place: "Australia",
-    websiteLink: "https://dcis.traiconevents.com/australia/",
-    ticketsLink: "https://dcis.traiconevents.com/australia/delegateregistration/",
-    backgroundImage: dcisausBg,
-    logo: dcisSaLogo,
-  },
-  {
-    id: 8,
-    date: "03 JULY",
-    name: "FINTECH REVOLUTION SUMMIT",
-    conc: "",
-    place: "SAUDI ARABIA",
-    websiteLink: "https://fintech.traiconevents.com/saudi/",
-    ticketsLink: "https://fintech.traiconevents.com/saudi/delegateregistration",
-    backgroundImage: frsksaBg,
-    logo: frsksaLogo,
-  },
-  {
-    id: 10,
     date: "23 JULY",
     name: "FINTECH REVOLUTION SUMMIT",
     conc: "",
@@ -909,7 +887,7 @@ const eventsData = [
     logo: frsmlLogo,
   },
   {
-    id: 11,
+    id: 8,
     date: "07 - 08 SEPTEMBER",
     name: "OIL AND GAS TECHNOLOGY SUMMIT",
     conc: "",
@@ -920,7 +898,7 @@ const eventsData = [
     logo: OgtsSaudi,
   },
   {
-    id: 12,
+    id: 9,
     date: "10 OCTOBER",
     name: "CYBER REVOLUTION SUMMIT",
     conc: "",
@@ -929,6 +907,17 @@ const eventsData = [
     ticketsLink: "https://cyber.traiconevents.com/india/delegateregistration",
     backgroundImage: crsIndBg,
     logo: crsIndLogo,
+  },
+    {
+    id: 10,
+    date: "03 NOVEMBER",
+    name: "FINTECH REVOLUTION SUMMIT",
+    conc: "",
+    place: "SAUDI ARABIA",
+    websiteLink: "https://fintech.traiconevents.com/saudi/",
+    ticketsLink: "https://fintech.traiconevents.com/saudi/delegateregistration",
+    backgroundImage: frsksaBg,
+    logo: frsksaLogo,
   },
 
   // {
@@ -1411,6 +1400,7 @@ export default function Events() {
             <div className="event-details">
               <div className="event-name">CYBER REVOLUTION SUMMIT</div>
               <div className="event-place">MANILA, PHILIPPINES</div>
+                 <div className="conclude">CONCLUDED</div>
               <div className="event-buttons">
                 <a target="_blank" rel="noopener noreferrer" href="https://cyber.traiconevents.com/philippines/" className="visit">Visit website</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://cyber.traiconevents.com/philippines/delegateregistration" className="get">get tickets</a>
@@ -1454,126 +1444,6 @@ export default function Events() {
             </div>
           </EventBox>
           <EventBox onClick={() => handleEventBoxClick(6)}
-            style={{ display: currentGenre === "ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none" }}>
-            <div className="event-date-box">
-              <div className="date-container">
-                <div className="month">
-                  JULY
-                </div>
-                <div className="date">
-                  <p>9<sup>th</sup></p>
-                </div>
-                <div className="year">
-                  2025
-                </div>
-              </div>
-            </div>
-            <div className="event-details">
-              <div className="event-name">DATACENTRE AND CLOUD INNOVATION SERIES</div>
-              <div className="event-place">AUSTRALIA</div>
-              <div className="event-buttons">
-                <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/australia/" className="visit">Visit website</a>
-                <a target="_blank" rel="noopener noreferrer" href="https://dcis.traiconevents.com/australia/delegateregistration" className="get">get tickets</a>
-              </div>
-            </div>
-            <div className="event-logo-part">
-              <div className="event-logo-box">
-                <div className="event-logo-glow">
-
-                </div>
-                <div className="cuts">
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                </div>
-                <div className="ticket-cut">
-
-                </div>
-                <img src={dcisausLogo} alt="" />
-              </div>
-            </div>
-          </EventBox>
-          <EventBox onClick={() => handleEventBoxClick(7)}
-            style={{ display: currentGenre === "ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none" }}>
-            <div className="event-date-box">
-              <div className="date-container">
-                <div className="month">
-                  JULY
-                </div>
-                <div className="date">
-                  <p>03<sup>rd</sup></p>
-                </div>
-                <div className="year">
-                  2025
-                </div>
-              </div>
-            </div>
-            <div className="event-details">
-              <div className="event-name">FINTECH REVOLUTION SUMMIT</div>
-              <div className="event-place">RIYADH, SAUDI ARABIA</div>
-              <div className="event-buttons">
-                <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/saudi/" className="visit">Visit website</a>
-                <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/saudi/delegateregistration" className="get">get tickets</a>
-              </div>
-            </div>
-            <div className="event-logo-part">
-              <div className="event-logo-box">
-                <div className="event-logo-glow">
-
-                </div>
-                <div className="cuts">
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                  <div className="cuts-dot"></div>
-                </div>
-                <div className="ticket-cut">
-
-                </div>
-                <img src={frsksaLogo} alt="" />
-              </div>
-            </div>
-          </EventBox>
-          <EventBox onClick={() => handleEventBoxClick(8)}
             style={{ display: currentGenre === "ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none" }}>
             <div className="event-date-box">
               <div className="date-container">
@@ -1633,7 +1503,7 @@ export default function Events() {
               </div>
             </div>
           </EventBox>
-          <EventBox onClick={() => handleEventBoxClick(9)}
+          <EventBox onClick={() => handleEventBoxClick(7)}
             style={{ display: currentGenre === "ALL GENRES" || currentGenre === "INTERNATIONAL" ? "flex" : "none" }}>
             <div className="event-date-box">
               <div className="date-container">
@@ -1693,7 +1563,7 @@ export default function Events() {
               </div>
             </div>
           </EventBox>
-           <EventBox onClick={() => handleEventBoxClick(10)}
+           <EventBox onClick={() => handleEventBoxClick(8)}
             style={{ display: currentGenre === "ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none" }}>
             <div className="event-date-box">
               <div className="date-container">
@@ -1750,6 +1620,66 @@ export default function Events() {
 
                 </div>
                 <img src={crsIndLogo} alt="" />
+              </div>
+            </div>
+          </EventBox>
+          <EventBox onClick={() => handleEventBoxClick(9)}
+            style={{ display: currentGenre === "ALL GENRES" || currentGenre === "INDIA" ? "flex" : "none" }}>
+            <div className="event-date-box">
+              <div className="date-container">
+                <div className="month">
+                NOVEMBER
+                </div>
+                <div className="date">
+                  <p>03<sup>rd</sup></p>
+                </div>
+                <div className="year">
+                  2025
+                </div>
+              </div>
+            </div>
+            <div className="event-details">
+              <div className="event-name">FINTECH REVOLUTION SUMMIT</div>
+              <div className="event-place">RIYADH, SAUDI ARABIA</div>
+              <div className="event-buttons">
+                <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/saudi/" className="visit">Visit website</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://fintech.traiconevents.com/saudi/delegateregistration" className="get">get tickets</a>
+              </div>
+            </div>
+            <div className="event-logo-part">
+              <div className="event-logo-box">
+                <div className="event-logo-glow">
+
+                </div>
+                <div className="cuts">
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                  <div className="cuts-dot"></div>
+                </div>
+                <div className="ticket-cut">
+
+                </div>
+                <img src={frsksaLogo} alt="" />
               </div>
             </div>
           </EventBox>
