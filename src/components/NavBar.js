@@ -223,6 +223,10 @@ const Dediv = styled.div`
     color:white;
     
     }
+
+    @media screen and (max-width:1024px){
+      display: none;
+    }
 `;
 
 const Dede = styled.div`
