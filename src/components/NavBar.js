@@ -224,22 +224,63 @@ const Dediv = styled.div`
     
     }
 
-    @media screen and (max-width:1024px){
-      display: none;
+    @media screen and (max-width:767px){
+        &.de-box{
+     font-size: 3vw;
+         margin-top:72vw;
+         margin-left: 33vw;
+        }
+        .def{
+          padding-top: 5vw;
+        }
+        .del{
+          padding-bottom: 5vw;
+        }
+
     }
+     @media screen and (min-width:768px) and (max-width:1023px){
+     &.de-box{
+     font-size: 3vw;
+         margin-top:50vw;
+         margin-left: 25vw;
+        }
+        .def{
+          padding-top: 4vw;
+        }
+        .del{
+          padding-bottom: 4vw;
+        }
+  }
 `;
 
 const Dede = styled.div`
-  width:12vw;
-  padding:0.8vw 1vw;
+  width: 12vw;
+  padding: 0.8vw 1vw;
   font-size: 0.8vw;
   font-weight: 600;
   font-family: "figtree";
-  cursor:pointer;
-  &:hover{
-    background:#000000;
+  cursor: pointer;
+
+  &:hover {
+    background: #000000;
   }
+
+ @media screen and (max-width: 767px) {
+  font-size: 3vw;
+  width: 40vw;
+  line-height: 1.5;
+  padding: 2vw 4vw;
+
+}
+   @media screen and (min-width:768px) and (max-width:1023px){
+      font-size: 2.3vw;
+  width: 30vw;
+  line-height: 1.5;
+  padding: 1vw 3vw;
+   }
+
 `;
+
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -285,13 +326,13 @@ export default function NavBar() {
             </Dediv>
           </Drodiv> */}
           <Drodiv className="dropdown">
-            <Li><Link to="/events" onClick={handleNavClick}>EVENTS</Link></Li>
+            <Li><Link to="/events" >EVENTS</Link></Li>
             <Dediv className="de-box">
-              <a href='https://fintechrevolutionseries.com/' target='_blank'><Dede className="de">FINTECH REVOLUTION SUMMIT</Dede></a>
+              <a href='https://fintechrevolutionseries.com/' target='_blank'><Dede className="de def">FINTECH REVOLUTION SUMMIT</Dede></a>
               <a href='https://cyberrevolutionsummit.com/' target='_blank'> <Dede className="de">CYBER REVOLUTION SUMMIT</Dede></a>
               <a href='https://airevolutionsummit.com/' target='_blank'><Dede className="de">AI REVOLUTION SUMMIT</Dede></a>
               <a href='https://whrsummit.com/' target='_blank'><Dede className="de">WHR SUMMIT</Dede></a>
-              <a href='https://digitalrevolutionsummit.com/' target='_blank'><Dede className="de">DIGITAL REVOLUTION SUMMIT</Dede></a>
+              <a href='https://digitalrevolutionsummit.com/' target='_blank'><Dede className="de del">DIGITAL REVOLUTION SUMMIT</Dede></a>
 
             </Dediv>
           </Drodiv>
