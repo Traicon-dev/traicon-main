@@ -210,7 +210,7 @@ const Dediv = styled.div`
     flex-direction:column;
     justify-content:center;
     position:absolute;
-    margin-top:22vw;
+    margin-top:24vw;
     background:#202020;
     border-radius:1vw;
     font-size:0.8vw;
@@ -254,7 +254,7 @@ const Dediv = styled.div`
 
 const Dede = styled.div`
 position: relative;
-  width: 12vw;
+  width: 14vw;
   padding: 0.8vw 1vw;
   font-size: 0.8vw;
   font-weight: 600;
@@ -359,7 +359,7 @@ export default function NavBar() {
               <div href='' target='_blank'><Dede className="de del">AIRPORT MODERNIZATION SUMMIT
                 <div class="sub-names">
                   <a href='https://ams.traiconevents.com/' class="sub-name">INDIA</a>
-                  <div class="sub-name">KENYA</div>
+                  <div class="sub-name">INDONESIA</div>
                 </div>
                 </Dede></div>
               <a href='https://idc.traiconevents.com/' target='_blank'><Dede className="de del">INDIAN DEFENCE CONCLAVE</Dede></a>
