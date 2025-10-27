@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import anime from "animejs";
 import eventBg from "../images/HomeEvents/events-bg2.jpg";
+import dcisIndialogo from "../images/HomeEvents/dcis_india.png"
+import dcisIndBg from "../images/events/dcis/dcis__ind_bg.jpg"
 import ogtsLogo from "../images/HomeEvents/ogts_logo.png"
 import ogtsBg from "../images/HomeEvents/ogts_event.JPG"
 import frsbhLogo from "../images/HomeEvents/frs_logo-bahrain.svg"
@@ -1541,7 +1543,7 @@ const UpcomingEvents = () => {
             >
               <div className="event-slide-box">
                 <div className="event-logo">
-                  <img src={drsbhLogo} alt="digital revolution summit bahrain logo" className="eventLogo" />
+                  <img src={dcisIndialogo} alt="Data Centre Innovation Series" className="eventLogo" />
                 </div>
                 <div className="event-slide-overlay">
 
@@ -1550,7 +1552,7 @@ const UpcomingEvents = () => {
 
                 </div>
                 <div className="eweb-link">
-                  <a href="https://digital.traiconevents.com/bahrain" target="_blank" rel="noopener noreferrer">VIEW EVENT</a>
+                  <a href="https://datacenterinnovationseries.com/india/" target="_blank" rel="noopener noreferrer">VIEW EVENT</a>
                 </div>
                 <div className="event-slide-patch">
                   <svg
@@ -1579,10 +1581,10 @@ const UpcomingEvents = () => {
                   </svg>
 
                 </div>
-                <img src={drsbhBg} alt="digital revolution summit" />
+                <img src={dcisIndBg} alt="DataCentre Innovation Series" />
               </div>
-              <div className="event-slide-name">Digital Revolution Summit</div>
-              <div className="eventdate-place"> 27<sup>th</sup> NOVEMBER 2025, BAHRAIN</div>
+              <div className="event-slide-name">Datacentre Innovation Series</div>
+              <div className="eventdate-place"> 10<sup>th</sup> DECEMBER 2025, INDIA</div>
             </div>
             <div className={`keen-slider__slide eventslide ${activeIndex === 18 ? 'active' : ''}`}
               onClick={() => handleSlideClick(18)}

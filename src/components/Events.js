@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import AnimatedText from './AnimatedText';
 
 import FintechBh from '../images/HomeEvents/frs_logo-bahrain.svg'
+import DcisIndLogo from '../images/HomeEvents/dcis_india.png'
+import dcisIndBg from '../images/events/dcis/dcis__ind_bg.jpg'
 import OgtsSaudi from '../images/HomeEvents/ogts_logo.png'
 import frsbh from "../images/HomeEvents/frs_bh.jpg"
 import ogts from "../images/HomeEvents/events-bg.jpg"
@@ -1017,27 +1019,38 @@ const eventsData = [
     backgroundImage: whrindBg,
     logo: whrindLogo,
   },
-  {
-    id: 11,
-    date: "27 NOVEMBER",
-    name: "DIGITAL REVOLUTION SUMMIT",
-    conc: "",
-    place: "BAHRAIN",
-    websiteLink: "https://digital.traiconevents.com/",
-    ticketsLink: "https://digital.traiconevents.com/",
-    backgroundImage: drsbhBg,
-    logo: drsbhLogo,
-  },
+  // {
+  //   id: 11,
+  //   date: "27 NOVEMBER",
+  //   name: "DIGITAL REVOLUTION SUMMIT",
+  //   conc: "",
+  //   place: "BAHRAIN",
+  //   websiteLink: "https://digital.traiconevents.com/",
+  //   ticketsLink: "https://digital.traiconevents.com/",
+  //   backgroundImage: drsbhBg,
+  //   logo: drsbhLogo,
+  // },
   {
     id: 12,
-    date: "04 DECEMBER",
+    date: "10 DECEMBER",
+    name: "DATACENTRE INNOVATION SERIES",
+    conc: "",
+    place: "INDIA",
+    websiteLink: "https://datacenterinnovationseries.com/india/",
+    ticketsLink: "https://datacenterinnovationseries.com/india/",
+    backgroundImage: dcisIndBg,
+    logo: DcisIndLogo,
+  },
+  {
+    id: 13,
+    date: "29 MAY",
     name: "FINTECH REVOLUTION SUMMIT",
     conc: "",
     place: "VIETNAM",
-    websiteLink: "https://fintech.traiconevents.com/vietnam",
-    ticketsLink: "https://fintech.traiconevents.com/vietnam",
-    backgroundImage: frsvnBg,
-    logo: frsvnLogo,
+    websiteLink: "https://fintechrevolutionseries.com/vietnam/",
+    ticketsLink: "https://fintechrevolutionseries.com/vietnam/",
+    backgroundImage: crsIndBg,
+    logo: DcisIndLogo,
   },
   // {
   //   id: 12,
@@ -1645,6 +1658,7 @@ export default function Events() {
             <div className="event-details">
               <div className="event-name">ThaiCyberX</div>
               <div className="event-place">Thailand</div>
+              <div className="conclude">CONCLUDED</div>
               <div className="event-buttons">
                 <a target="_blank" rel="noopener noreferrer" href="https://cyber.traiconevents.com/thailand/" className="visit">Visit website</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://cyber.traiconevents.com/thailand/" className="get">get tickets</a>
@@ -1705,6 +1719,7 @@ export default function Events() {
             <div className="event-details">
               <div className="event-name">AIRPORT MODERNIZATION SUMMIT</div>
               <div className="event-place">NEW DELHI</div>
+              <div className="conclude">CONCLUDED</div>
               <div className="event-buttons">
                 <a target="_blank" rel="noopener noreferrer" href="https://ams.traiconevents.com" className="visit">Visit website</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://ams.traiconevents.com" className="get">get tickets</a>
@@ -1755,7 +1770,7 @@ export default function Events() {
                   SEPTEMBER
                 </div>
                 <div className="date">
-                  <p>07<sup>th</sup> - 08<sup>th</sup></p>
+                  <p>TBA</p>
                 </div>
                 <div className="year">
                   2025
@@ -1885,6 +1900,7 @@ export default function Events() {
             <div className="event-details">
               <div className="event-name">AI REVOLUTION SUMMIT</div>
               <div className="event-place">PHILIPPINES</div>
+              <div className="conclude">CONCLUDED</div>
               <div className="event-buttons">
                 <a target="_blank" rel="noopener noreferrer" href="https://air.traiconevents.com/philippines" className="visit">Visit website</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://air.traiconevents.com/philippines" className="get">get tickets</a>
@@ -2232,10 +2248,10 @@ export default function Events() {
             <div className="event-date-box">
               <div className="date-container">
                 <div className="month">
-                  NOVEMBER
+                  DECEMBER
                 </div>
                 <div className="date">
-                  <p>27<sup>th</sup></p>
+                  <p>10<sup>th</sup></p>
                 </div>
                 <div className="year">
                   2025
@@ -2243,11 +2259,11 @@ export default function Events() {
               </div>
             </div>
             <div className="event-details">
-              <div className="event-name">DIGITAL REVOLUTION SUMMIT</div>
-              <div className="event-place">BAHRAIN</div>
+              <div className="event-name">DATACENTRE INNOVATION SERIES</div>
+              <div className="event-place">INDIA</div>
               <div className="event-buttons">
-                <a target="_blank" rel="noopener noreferrer" href="https://digital.traiconevents.com/bahrain" className="visit">Visit website</a>
-                <a target="_blank" rel="noopener noreferrer" href="https://digital.traiconevents.com/bahrain" className="get">get tickets</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://datacenterinnovationseries.com/india/" className="visit">Visit website</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://datacenterinnovationseries.com/india/" className="get">get tickets</a>
               </div>
             </div>
             <div className="event-logo-part">
@@ -2283,7 +2299,7 @@ export default function Events() {
                 <div className="ticket-cut">
 
                 </div>
-                <img src={drsbhLogo} alt="digital revolution summit bahrain logo" />
+                <img src={DcisIndLogo} alt="data center and cloud india logo" />
               </div>
             </div>
           </EventBox>
@@ -2292,13 +2308,13 @@ export default function Events() {
             <div className="event-date-box">
               <div className="date-container">
                 <div className="month">
-                  DECEMBER
+                  MAY
                 </div>
                 <div className="date">
-                  <p>04<sup>th</sup></p>
+                  <p>29<sup>th</sup></p>
                 </div>
                 <div className="year">
-                  2025
+                  2026
                 </div>
               </div>
             </div>

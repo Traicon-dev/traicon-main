@@ -210,18 +210,17 @@ const Dediv = styled.div`
     flex-direction:column;
     justify-content:center;
     position:absolute;
-    margin-top:15vw;
+    margin-top:22vw;
     background:#202020;
     border-radius:1vw;
     font-size:0.8vw;
     margin-left:9vw;
     width:fit-content;
     height:fit-content;
-  
   }
+  
     a{
     color:white;
-    
     }
 
     @media screen and (max-width:767px){
@@ -254,6 +253,7 @@ const Dediv = styled.div`
 `;
 
 const Dede = styled.div`
+position: relative;
   width: 12vw;
   padding: 0.8vw 1vw;
   font-size: 0.8vw;
@@ -263,6 +263,9 @@ const Dede = styled.div`
 
   &:hover {
     background: #000000;
+  }
+  &:hover .sub-names {
+    opacity: 1;
   }
 
  @media screen and (max-width: 767px) {
@@ -278,6 +281,26 @@ const Dede = styled.div`
   line-height: 1.5;
   padding: 1vw 3vw;
    }
+   & .sub-names {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #202020;
+   }
+    & .sub-name {
+      padding: 0.5vw 0; 
+      width: 100%;
+      text-align: center;
+    }
+    .sub-name:hover{
+      background-color: #000000;
+    }
 
 `;
 
@@ -332,7 +355,15 @@ export default function NavBar() {
               <a href='https://cyberrevolutionsummit.com/' target='_blank'> <Dede className="de">CYBER REVOLUTION SUMMIT</Dede></a>
               <a href='https://airevolutionsummit.com/' target='_blank'><Dede className="de">AI REVOLUTION SUMMIT</Dede></a>
               <a href='https://whrsummit.com/' target='_blank'><Dede className="de">WHR SUMMIT</Dede></a>
-              <a href='https://digitalrevolutionsummit.com/' target='_blank'><Dede className="de del">DIGITAL REVOLUTION SUMMIT</Dede></a>
+              <a href='https://govxcellence.com/' target='_blank'><Dede className="de del">GOVXCELLENCE SUMMIT</Dede></a>
+              <div href='' target='_blank'><Dede className="de del">AIRPORT MODERNIZATION SUMMIT
+                <div class="sub-names">
+                  <a href='https://ams.traiconevents.com/' class="sub-name">INDIA</a>
+                  <div class="sub-name">KENYA</div>
+                </div>
+                </Dede></div>
+              <a href='https://idc.traiconevents.com/' target='_blank'><Dede className="de del">INDIAN DEFENCE CONCLAVE</Dede></a>
+              <div href='https://idc.traiconevents.com/' target='_blank'><Dede className="de del">KENYA DEFENCE CONCLAVE</Dede></div>
 
             </Dediv>
           </Drodiv>
