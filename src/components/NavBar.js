@@ -210,7 +210,7 @@ const Dediv = styled.div`
     flex-direction:column;
     justify-content:center;
     position:absolute;
-    margin-top:24vw;
+    margin-top:20vw;
     background:#202020;
     border-radius:1vw;
     font-size:0.8vw;
@@ -226,8 +226,9 @@ const Dediv = styled.div`
     @media screen and (max-width:767px){
         &.de-box{
      font-size: 3vw;
-         margin-top:72vw;
+         margin-top:95vw;
          margin-left: 33vw;
+         
         }
         .def{
           padding-top: 5vw;
@@ -240,8 +241,9 @@ const Dediv = styled.div`
      @media screen and (min-width:768px) and (max-width:1023px){
      &.de-box{
      font-size: 3vw;
-         margin-top:50vw;
+         margin-top:65vw;
          margin-left: 25vw;
+         display: block;
         }
         .def{
           padding-top: 4vw;
@@ -263,6 +265,7 @@ position: relative;
 
   &:hover {
     background: #000000;
+    z-index: 10;
   }
   &:hover .sub-names {
     opacity: 1;
@@ -351,19 +354,70 @@ export default function NavBar() {
           <Drodiv className="dropdown">
             <Li><Link to="/events" >EVENTS</Link></Li>
             <Dediv className="de-box">
-              <a href='https://fintechrevolutionseries.com/' target='_blank'><Dede className="de def">FINTECH REVOLUTION SUMMIT</Dede></a>
-              <a href='https://cyberrevolutionsummit.com/' target='_blank'> <Dede className="de">CYBER REVOLUTION SUMMIT</Dede></a>
-              <a href='https://airevolutionsummit.com/' target='_blank'><Dede className="de">AI REVOLUTION SUMMIT</Dede></a>
-              <a href='https://whrsummit.com/' target='_blank'><Dede className="de">WHR SUMMIT</Dede></a>
-              <a href='https://govxcellence.com/' target='_blank'><Dede className="de del">GOVXCELLENCE SUMMIT</Dede></a>
+              <a href='https://fintechrevolutionseries.com/' target='_blank'><Dede className="de def">FINTECH REVOLUTION SUMMIT
+                             <div class="sub-names">
+                  <a href='https://fintechrevolutionseries.com/saudi/' class="sub-name">Saudi Arabia</a>
+                   <a href='https://fintechrevolutionseries.com/bahrain/' class="sub-name">Bahrain</a>
+                  <a href='https://fintechrevolutionseries.com/philippines' class="sub-name">Philippines</a>
+                   <a href='https://fintechrevolutionseries.com/nigeria' class="sub-name">Nigeria</a>
+                   <a href='https://fintechrevolutionseries.com/malaysia' class="sub-name">Malaysia</a>
+                   <a href='https://fintechrevolutionseries.com/india' class="sub-name">India</a>
+                    <a href='https://fintechrevolutionseries.com/thailand' class="sub-name">Thailand</a>
+                </div>
+                </Dede></a>
+              <a href='https://cyberrevolutionsummit.com/' target='_blank'> <Dede className="de">CYBER REVOLUTION SUMMIT
+                        <div class="sub-names">
+                  <a href='https://cyberrevolutionsummit.com/kuwait' class="sub-name">Kuwait</a>
+                   <a href='https://cyberrevolutionsummit.com/mozambique' class="sub-name">Mozambique</a>
+                  <a href='https://cyberrevolutionsummit.com/malaysia' class="sub-name">Malaysia</a>
+                   <a href='https://cyberrevolutionsummit.com/philippines' class="sub-name">Philippines</a>
+                   <a href='https://cyberrevolutionsummit.com/india' class="sub-name">India</a>
+                   <a href='https://cyberrevolutionsummit.com/thailand' class="sub-name">Thailand</a>
+                     <a href='https://cyberrevolutionsummit.com/saudi' class="sub-name">Saudi</a>
+                       <a href='https://cyberrevolutionsummit.com/morocco' class="sub-name">Morocco</a>
+                </div>
+                </Dede></a>
+              <a href='https://airevolutionsummit.com/' target='_blank'><Dede className="de">AI REVOLUTION SUMMIT
+                   <div class="sub-names">
+                  <a href='https://airevolutionsummit.com/singapore' class="sub-name">Singapore</a>
+                   <a href='https://airevolutionsummit.com/vietnam' class="sub-name">Vietnam</a>
+                  <a href='https://airevolutionsummit.com/india' class="sub-name">India</a>
+                   <a href='https://airevolutionsummit.com/indonesia' class="sub-name">Indonesia</a>
+                   <a href='https://airevolutionsummit.com/malaysia' class="sub-name">Malaysia</a>
+                     <a href='https://airevolutionsummit.com/philippines' class="sub-name">Philippines</a>
+                </div>
+                </Dede></a>
+              <a href='https://whrsummit.com/' target='_blank'><Dede className="de">WHR SUMMIT
+                  <div class="sub-names">
+                  <a href='https://whrsummit.com/philippines' class="sub-name">Philippines</a>
+                   <a href='https://whrsummit.com/malaysia' class="sub-name">Malaysia</a>
+                  <a href='https://whrsummit.com/vietnam' class="sub-name">Vietnam</a>
+                   <div href='https://whrsummit.com/thailand' class="sub-name">Thailand</div>
+                   <div href='https://whrsummit.com/india' class="sub-name">India</div>
+                </div>
+                </Dede></a>
+              <a href='https://govxcellence.com/' target='_blank'><Dede className="de del">GOVXCELLENCE SUMMIT
+                  <div class="sub-names">
+                  <a href='https://govxcellence.com/philippines' class="sub-name">Philippines</a>
+                   <a href='https://govxcellence.com/indonesia' class="sub-name">Indonesia</a>
+                  <a href='https://govxcellence.com/saudi' class="sub-name">Saudi Arabia</a>
+                   <a href='https://govxcellence.com/malaysia' class="sub-name">Malaysia</a>
+                   <a href='https://govxcellence.com/india' class="sub-name">India</a>
+                </div>
+                </Dede></a>
               <div href='' target='_blank'><Dede className="de del">AIRPORT MODERNIZATION SUMMIT
                 <div class="sub-names">
-                  <a href='https://ams.traiconevents.com/' class="sub-name">INDIA</a>
-                  <div class="sub-name">INDONESIA</div>
+                  <a href='https://ams.traiconevents.com/' class="sub-name">India</a>
+                  <div class="sub-name">Indonesia</div>
                 </div>
                 </Dede></div>
-              <a href='https://idc.traiconevents.com/' target='_blank'><Dede className="de del">INDIAN DEFENCE CONCLAVE</Dede></a>
-              <div href='https://idc.traiconevents.com/' target='_blank'><Dede className="de del">KENYA DEFENCE CONCLAVE</Dede></div>
+              <div href='https://idc.traiconevents.com/' target='_blank'><Dede className="de del">DEFENCE CONCLAVE
+               <div class="sub-names">
+                  <a href='https://idc.traiconevents.com/' class="sub-name">India</a>
+                  <div class="sub-name">Kenya</div>
+                </div>
+                </Dede></div>
+           
 
             </Dediv>
           </Drodiv>
